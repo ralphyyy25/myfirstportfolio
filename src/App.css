@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0F172A;
+  color: #E5E7EB;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 🔥 THIS FIXES THE ALIGNMENT */
+  padding: 20px;
+  background: #111827;
+  border-bottom: 1px solid #1E293B;
+}
+
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #38BDF8;
+  margin: 0; /* removes extra space */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center; /* keeps links aligned */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #E5E7EB;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #3B82F6;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #111827;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #F9FAFB; /* readable white */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #9CA3AF;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #3B82F6;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.hero button:hover {
+  background: #2563EB;
+}
+.profile-image {
+  width: 250px;              /* 🔥 bigger circle */
+  height: 250px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 6px solid #3B82F6; /* 🔥 thicker border */
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+
+  margin: 20px auto 10px;
+  display: block;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+
+  border: 2px solid #3B82F6;   /* 🔥 border added */
+  border-radius: 12px;         /* smooth corners */
+  max-width: 800px;            /* keeps it centered & clean */
+  margin: 60px auto;           /* center the whole section */
+
+  background: #111827;         /* matches your theme */
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.2); /* subtle glow */
+}
+
+.about h2 {
+  color: #F9FAFB;
+  margin-bottom: 15px;
+  font-size: 2rem;             /* 🔥 bigger heading */
+}
+
+.about p {
+  color: #9CA3AF;
+  max-width: 650px;
+  margin: auto;
+
+  font-size: 1.5rem;           /* 🔥 bigger text */
+  line-height: 1.8;            /* better spacing */
+}
+
+
+.projects {
+  padding: 80px 20px;
+  background: #111827;
+  text-align: center;
+}
+
+.projects h2 {
+  color: #F9FAFB; /* readable white */
+  margin-bottom: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #E5E7EB;
+}
+
+.project-card {
+  background: #1E293B;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid #1E293B;
+}
+
+.project-img {
+  width: 100%;              /* 🔥 fits inside card */
+  height: 200px;            /* fixed height */
+  object-fit: cover;        /* prevents stretching */
+
+  border-radius: 10px;      /* smooth corners */
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #9CA3AF;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #3B82F6;
+  background: #1E3A8A;
+}
+
+
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #F9FAFB; /* readable white */
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #38BDF8;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #3B82F6;
+}
+
+
+footer {
+
+  background: #111827;
+  padding: 20px;
+  text-align: center;
+  color: #9CA3AF;
+  border-top: 1px solid #1E293B;
+}
